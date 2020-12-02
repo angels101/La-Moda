@@ -1,0 +1,399 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.logo {
+    height: 39px;
+    width: 390px;
+    left: -43px;
+    top: 34px;
+    border-radius: nullpx;
+    align-items: left;
+    align-self: flex-start;
+    /* font-family: Roboto;
+                                                                                                    font-size: 36px;
+                                                                                                    font-style: normal;
+                                                                                                    font-weight: 700;
+                                                                                                    line-height: 57px; */
+    /* letter-spacing: 0.005em; */
+    text-align: center;
+    /* background: linear-gradient(180deg, #050201 52.6%, rgba(67, 184, 78, 0) 82.81%, rgba(247, 9, 9, 0.909091) 100%); */
+    /* LA MODA */
+    position: relative;
+    /* width: 390px;
+    height: 39px;
+    left: -43px;
+    top: 34px; */
+    /* font-family: Roboto;
+                                                                                                    font-style: normal;
+                                                                                                    font-weight: bold;
+                                                                                                    font-size: 36px;
+                                                                                                    line-height: 157.7%;
+                                                                                                    /* or 57px */
+    /* text-align: center;
+    letter-spacing: 0.005em; */
+}
+
+
+/* Navigation */
+
+.nav-container {
+    background: #fffffa;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    height: 72px;
+    margin-top: -65px;
+    z-index: 500;
+    position: relative;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav .logo {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    color: #021718;
+}
+
+.nav-items li {
+    list-style: none;
+    margin-right: 100px;
+}
+
+.nav-items li:nth-last-of-type(1) {
+    margin: 0;
+}
+
+.nav-items li a {
+    color: #021718;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+
+/* Header */
+
+.header-container {
+    background: #f5a05c url("images/bg-shape.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 75px;
+    color: #021718;
+    margin-bottom: 24px;
+}
+
+header p {
+    font-size: 24px;
+    line-height: 42px;
+    color: #021718;
+    width: 418px;
+    margin-bottom: 48px;
+}
+
+header a {
+    color: #fffffa;
+    font-size: 24px;
+    text-decoration: none;
+    background: #01847f;
+    border-radius: 8px;
+    padding: 12px 48px;
+    display: inline-block;
+    transition: 300ms;
+}
+
+header a:hover {
+    transform: translateY(-8px);
+}
+
+
+/* Social Icons */
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    margin: 0 24px;
+}
+
+.social-icons a:nth-of-type(1) {
+    margin-left: 0;
+}
+
+
+/* Hero image */
+
+header .hero-image {
+    position: relative;
+}
+
+header .hero-image img {
+    transition: 300ms;
+    position: relative;
+    z-index: 100;
+}
+
+header .hero-image img:hover {
+    transform: rotate(-6deg);
+}
+
+header .hero-image .photo-bg {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 45px;
+    top: 24px;
+    background: #44a1a0;
+    transform: rotate(-6deg);
+}
+
+
+/* Search Box */
+
+.search-box {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: right;
+    position: relative;
+    top: 0;
+    z-index: 101;
+    transition: 300ms;
+}
+
+.search-box.active {
+    top: 72px;
+}
+
+.search-box input {
+    background: #fffffa;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 0px 0px 8px 8px;
+    font-size: 24px;
+    line-height: 42px;
+    border: 0;
+    padding: 12px 48px;
+}
+
+.search-box input::placeholder {
+    color: #b3b3b3;
+}
+
+
+/* Search & Close Buttons */
+
+.nav-btn-container {
+    display: flex;
+    position: relative;
+}
+
+.nav-btn-container img {
+    position: absolute;
+}
+
+.nav-btn-container .close-btn {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: 300ms;
+}
+
+.nav-btn-container .search-btn {
+    pointer-events: auto;
+    transition: 300ms;
+}
+
+.nav-btn-container.active .search-btn {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+}
+
+.nav-btn-container.active .close-btn {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+
+/* Hidden Items */
+
+
+/* .search-box {
+ 
+
+{
+    */
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+
+/* Clearfix (clear floats) */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* display: none; */
+
+
+/* .addidas {
+    position: absolute;
+    width: 322px;
+    height: 315px;
+    left: 414px;
+    top: 203px;
+    background: url("src/addidas.png");
+} */
+
+
+/* .fashion-sense {
+    position: absolute;
+    width: 350px;
+    height: 162px;
+    align-self: left;
+} */
+
+
+/* .offer {
+    position: absolute;
+    width: 235px;
+    height: 29px;
+} */
+
+
+/* .container-top {
+    overflow-y: auto;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 25%;
+    height: 25%;
+    background: rgba(25, 42, 50, 0.7);
+    opacity: 1;
+    transition: all 0.4s ease 0s;
+    box-sizing: border-box;
+    display: flex;
+    max-height: 976px;
+    line-height: 1;
+    color: rgb(25, 42, 50);
+} */
+
+*/
+/*pricingtable*/
+
+.wrapper {
+    margin-top: 50px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.wrapper h1 {
+    font-family: 'Allura', cursive;
+    font-size: 52px;
+    margin-bottom: 25px;
+    letter-spacing: 10px;
+}
+
+.wrapper h1+p {
+    width: 60%;
+    margin: 0 auto 50px;
+    color: #fff;
+}
+
+.wrapper .pricing_wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.wrapper .pricing_wrapper .pricing_item {
+    background: #fff;
+    margin: 5px 10px;
+    margin-bottom: 50px;
+    width: 200px;
+    padding: 30px 20px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+}
+
+.wrapper .pricing_wrapper .pricing_item h3 {
+    font-size: 26px;
+}
+
+.wrapper .pricing_wrapper .pricing_item p.money {
+    margin: 50px 0 20px;
+    font-size: 52px;
+    color: #4aca85;
+}
+
+.wrapper .pricing_wrapper .pricing_item p.money span {
+    font-size: 12px;
+    color: #bebebe;
+}
+
+.wrapper .pricing_wrapper .pricing_item p {
+    color: #bebebe;
+}
+
+.wrapper .pricing_wrapper .pricing_item a.btn {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    background: #4aca85;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+
+/*AUTHENTIFICATION*/
+
+
+/* Footer */
